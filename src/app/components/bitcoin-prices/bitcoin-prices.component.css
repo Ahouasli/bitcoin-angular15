@@ -1,0 +1,67 @@
+.custom-width {
+    width: 250px !important;
+  }
+  .search {
+    height: 20px;
+    margin-left: -22px;
+    margin-top: 1px;
+}  
+
+.table td, .table th {
+    padding: 0px 10px 0px 10px !important;
+    vertical-align: middle !important; 
+    border-top: 0px solid #dee2e6 !important;
+}
+
+#icon-search {
+    margin-top: 0px !important;
+}
+
+.timeInput {
+    border-bottom: solid 1px; border-bottom-color: #949494;
+}
+
+.inputClock {
+    margin: -2px 0px 0px -27px;
+   
+}
+table {
+    width: 100%;
+  }
+  
+  .mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  .table {
+    margin-bottom: 0rem !important;
+  }
+  .loading-spinner {
+    background-color: #0000001f;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    z-index: 10000;
+  }
+  
+    .loading-spinner mat-spinner {
+      align-self: flex-end;
+      z-index: 10000;
+    }
+  
+  .loading-message {
+    text-align: center;
+    align-self: start;
+    z-index: 10000;
+  }
+.header{
+    font-weight: bold;
+    color:black;
+    font-size: medium;
+    background-color: #3f51b5;
+}
