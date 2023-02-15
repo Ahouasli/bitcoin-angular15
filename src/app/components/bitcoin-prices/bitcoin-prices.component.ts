@@ -33,8 +33,12 @@ export class BitcoinPricesComponent implements OnInit {
     this.searchForm.controls['dateTo'].setValue(new Date());
   }
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
+    @ViewChild(MatPaginator) set paginator(pager:MatPaginator) {
+    if (pager) this.dataSource.paginator = pager;
+  }
+  @ViewChild(MatSort) set sort(sorter:MatSort) {
+    if (sorter) this.dataSource.sort = sorter;
+  }
   selection = new SelectionModel<any>(false, []);
   searchForm: FormGroup = new FormGroup({
     dateFrom: new FormControl(),
